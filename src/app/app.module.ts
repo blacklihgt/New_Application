@@ -10,6 +10,7 @@ import { TabbleComponent } from './tabble/tabble.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { Tabble2Component } from './tabble2/tabble2.component';
+import { Tabble3Component } from './tabble3/tabble3.component';
 
 const appRoutes: Routes = [
   
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     SideNavComponent,
     TabbleComponent,
-    Tabble2Component
+    Tabble2Component,
+    Tabble3Component
   ],
   imports: [
     BrowserModule,
