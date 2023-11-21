@@ -93,6 +93,13 @@ export class SideNavComponent implements OnInit {
     ];
   }
 
+  navigateTo(route: string): any {
+    this.router.navigate([route]);
+  }
+  
+
+
+
  
 }
 

@@ -6,17 +6,34 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { DataTablesModule } from 'angular-datatables';
+import { TabbleComponent } from './tabble/tabble.component';
+import { Routes, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { Tabble2Component } from './tabble2/tabble2.component';
+
+const appRoutes: Routes = [
+  
+  { path: 'meeting', component: TabbleComponent},
+  { path: 'loans', component: Tabble2Component}
+  
+  
+];
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SideNavComponent
+    SideNavComponent,
+    TabbleComponent,
+    Tabble2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DataTablesModule
+    DataTablesModule,
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
