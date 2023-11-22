@@ -11,11 +11,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { Tabble2Component } from './tabble2/tabble2.component';
 import { Tabble3Component } from './tabble3/tabble3.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   
   { path: 'meeting', component: TabbleComponent},
-  { path: 'loans', component: Tabble2Component}
+  { path: 'loans', component: Tabble2Component},
+  { path: 'repaid', component: Tabble3Component}
   
   
 ];
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     DataTablesModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
